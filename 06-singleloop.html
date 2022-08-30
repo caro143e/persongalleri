@@ -48,6 +48,9 @@
         width: 80%;
         background-color: white;
       }
+      #popup img {
+        max-width: 60%;
+      }
     </style>
   </head>
   <body>
@@ -141,7 +144,7 @@
         popup.querySelector("img").src = "billeder/" + personData.billede;
         popup.querySelector("h2").textContent =
           personData.fornavn + "" + personData.efternavn;
-        popup.querySelector("p").textContent = person.email;
+        popup.querySelector("p").textContent = personData.email;
       }
       hentData();
     </script>
